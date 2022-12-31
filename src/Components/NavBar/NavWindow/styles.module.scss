@@ -1,0 +1,54 @@
+.navWindow {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  height: calc(100vh - 80px);
+  width: 100%;
+
+  padding: 20px;
+
+  color: black;
+  background-color: #f8f8f8;
+
+  overflow: hidden;
+
+  transition: all 0.5s;
+
+  .listItem {
+    padding: 20px 0;
+
+    cursor: pointer;
+
+    .navText {
+      font-family: DMSans;
+      font-weight: bold;
+      font-size: 18px;
+
+      user-select: none;
+    }
+  }
+  .subMenu {
+    // background-color: red !important;
+    animation: grow 1s forwards;
+    overflow-y: hidden;
+
+    .subItems {
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}
+
+.hidden {
+  height: 0px;
+  opacity: 0.5;
+}
+
+@keyframes grow {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 500px;
+  }
+}

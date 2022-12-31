@@ -1,0 +1,131 @@
+.Footer {
+  background-color: #ededed;
+
+  .content {
+    .topRow {
+      .searchBar {
+        .selectCnt {
+          height: 56px;
+
+          width: 350px;
+          max-width: 52vw;
+          padding: 12px 20px;
+
+          display: flex;
+          align-items: center;
+          gap: 13px;
+
+          // background-color: white;
+          border: 1px solid lightgray;
+
+          border-radius: 880px;
+
+          .icon {
+            transform: scale(1.2);
+          }
+          .logo {
+            height: 25px;
+            width: 25px;
+            display: flex;
+
+            background-image: url("~/public/images/logo_small.svg");
+            background-size: 90%;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+
+          .searchInput {
+            width: 100%;
+            // flex-grow: 1;
+
+            input {
+              font-family: Proxima Nova, sans-serif;
+              font-size: 18px;
+            }
+
+            :global .css-eoo4wq-MuiInputBase-root-MuiInput-root {
+              &:before {
+                border: none !important;
+              }
+              &:after {
+                border: none !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footerItemsCnt {
+      width: 100%;
+      display: grid;
+      .iconsCnt {
+        margin-right: 30px;
+        flex-shrink: 1;
+        height: max-content;
+        display: flex;
+        //   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .socialIcon {
+          padding: 10px;
+
+          display: grid;
+          place-items: center;
+
+          border-radius: 50%;
+          background-color: black;
+          .icon {
+            color: white;
+            font-size: 20px;
+          }
+        }
+      }
+
+      .footerListAccordion {
+        min-height: 10px;
+
+        background-color: transparent;
+        box-shadow: unset;
+        border: unset;
+
+        &::before {
+          display: none;
+        }
+
+        .summary {
+          height: 37px;
+          min-height: unset;
+          padding-left: 0;
+        }
+        .details {
+          padding-bottom: 0;
+        }
+      }
+    }
+    .divider {
+      width: 100%;
+      border-top: 1px solid lightgray;
+    }
+
+    .footerBottom {
+      color: #3c3d40;
+
+      .bottomItems {
+        width: max-content;
+        display: grid;
+        gap: 5px 30px;
+      }
+    }
+  }
+
+  .footerLink {
+    cursor: pointer;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #9663fc;
+    }
+  }
+}

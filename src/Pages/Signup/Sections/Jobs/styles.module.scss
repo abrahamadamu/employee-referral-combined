@@ -1,0 +1,73 @@
+.Jobs {
+  padding: 120px 0;
+  background-color: #ffda7a;
+  border-radius: 100px;
+
+  .carousel {
+    :global .carousel-slider {
+      padding-bottom: 20px;
+    }
+
+    :global .thumbs-wrapper {
+      &.axis-vertical {
+        display: none;
+      }
+    }
+    :global .dot {
+      &.selected {
+        opacity: 1;
+        background-color: #9663fc !important;
+      }
+      &:not(.selected) {
+        opacity: 0.7;
+        background-color: white;
+      }
+    }
+  }
+
+  .limitCnt {
+    margin-top: 16px;
+    width: 100%;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      height: 215px;
+      width: 110vw;
+      display: flex;
+      gap: 16px;
+
+      .shape {
+        height: 100%;
+        width: 40%;
+        background-color: #fff497;
+      }
+    }
+  }
+}
+
+.post {
+  min-height: 215px;
+  width: 40%;
+  padding: 32px;
+  border-radius: 50px;
+  background-color: white;
+
+  .profile {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .details {
+      color: #3c3d40;
+    }
+
+    .time {
+      color: #8e8f8f;
+    }
+  }
+}

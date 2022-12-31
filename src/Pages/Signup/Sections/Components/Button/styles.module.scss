@@ -1,0 +1,22 @@
+.button {
+  padding: 15px 20px;
+
+  color: white;
+  background-color: black;
+  font-family: DMSans;
+  font-size: 18px;
+  font-weight: bold;
+
+  border-radius: 50px;
+
+  text-align: center;
+
+  transition: all 0.3s;
+
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: #303034;
+  }
+}

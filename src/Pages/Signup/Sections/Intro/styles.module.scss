@@ -1,0 +1,50 @@
+.Intro {
+  background-color: white;
+
+  .content {
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
+
+    .textPart {
+      max-width: 500px;
+
+      .title {
+        margin-bottom: 40px;
+      }
+
+      .description {
+        margin-bottom: 40px;
+        color: #3c3d40;
+
+        font-family: DMSans;
+        line-height: 24px;
+      }
+
+      .applyCnt {
+        display: flex;
+        cursor: pointer;
+
+        &:hover > * {
+          background-color: #303034;
+        }
+
+        .arrow {
+          padding: 15px 16px;
+          display: grid;
+          place-items: center;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .imagePart {
+      display: grid;
+      place-items: center;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

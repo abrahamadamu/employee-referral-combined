@@ -1,0 +1,37 @@
+.slideItem {
+}
+
+.fadeIn {
+  animation: fadeInAnim forwards 300ms;
+}
+.fadeOut {
+  animation: fadeOutAnim forwards 300ms;
+}
+
+@keyframes fadeInAnim {
+  0% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutAnim {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+}

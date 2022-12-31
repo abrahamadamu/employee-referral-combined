@@ -1,0 +1,12 @@
+.socialIcon {
+  font-size: 30px;
+  color: rgb(171, 23, 245);
+
+  cursor: pointer;
+
+  &:hover {
+    filter: brightness(1.2);
+    transform: scale(1.02);
+    transition: all 0.2s;
+  }
+}

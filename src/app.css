@@ -1,0 +1,42 @@
+@font-face {
+  font-family: Recoleta;
+  src: url("~/public/fonts/Recoleta-Bold.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Recoleta;
+  src: url("~/public/fonts/Recoleta-SemiBold.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url("~/public/fonts/DMSans-Regular.woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("~/public/fonts/DMSans-Bold.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Proxima Nova;
+  src: url("~/public/fonts/hinted-ProximaNova-Regular.woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url("~/public/fonts/hinted-ProximaNova-Semibold.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Proxima Nova;
+  src: url("~/public/fonts/hinted-ProximaNova-Bold.woff2");
+  font-weight: bold;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}

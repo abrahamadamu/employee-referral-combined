@@ -1,0 +1,38 @@
+.container {
+  .phonecontainer {
+    border: none;
+
+    .phoneinput {
+      height: max-content;
+      min-width: 60%;
+
+      color: var(--phone-input-color-main);
+      background-color: transparent;
+
+      font-family: var(--phone-input-font-family);
+      font-size: var(--phone-input-font-size) !important;
+
+      border: none;
+      border-bottom: solid 1px;
+      border-bottom-color: var(--phone-input-color-lighter);
+      border-radius: 0;
+
+      &:focus {
+        border-bottom: solid 2px;
+        border-bottom-color: var(--phone-input-color-main);
+      }
+    }
+
+    .countrybutton {
+      border: none;
+      background-color: transparent;
+
+      transform: scale(1.2);
+    }
+  }
+}
+
+.searchinput {
+  color: red;
+  border: none;
+}
