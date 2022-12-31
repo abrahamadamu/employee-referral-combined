@@ -40,3 +40,7 @@
   margin: 0;
   padding: 0;
 }
+
+.MuiAutocomplete-inputRoot::before {
+  border-bottom: none !important;
+}
